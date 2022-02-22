@@ -30,13 +30,13 @@ body {
                         $filter: linear-gradient(rgba(51, 0, 255, 0.251), rgba(255, 225, 0, 0.415));
 
                         &.slide_1 {
-                            background-image: $filter, url(/img/swiper/cover.jpg);
+                            background-image: $filter, url(../../img/swiper/cover.jpg);
                         }
                         &.slide_2 {
-                            background-image: $filter, url(/img/swiper/img-2.jpeg);
+                            background-image: $filter, url(../../img/swiper/img-2.jpeg);
                         }
                         &.slide_3 {
-                            background-image: $filter, url(/img/swiper/img-3.jpeg);
+                            background-image: $filter, url(../../img/swiper/img-3.jpeg);
                         }
                     }
                 }

@@ -517,18 +517,18 @@ body main section.cover .swiper .swiper-slide {
 }
 
 body main section.cover .swiper .swiper-slide.slide_1 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 0, 255, 0.251)), to(rgba(255, 225, 0, 0.415))), url(/img/swiper/cover.jpg);
-  background-image: linear-gradient(rgba(51, 0, 255, 0.251), rgba(255, 225, 0, 0.415)), url(/img/swiper/cover.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 0, 255, 0.251)), to(rgba(255, 225, 0, 0.415))), url(../../img/swiper/cover.jpg);
+  background-image: linear-gradient(rgba(51, 0, 255, 0.251), rgba(255, 225, 0, 0.415)), url(../../img/swiper/cover.jpg);
 }
 
 body main section.cover .swiper .swiper-slide.slide_2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 0, 255, 0.251)), to(rgba(255, 225, 0, 0.415))), url(/img/swiper/img-2.jpeg);
-  background-image: linear-gradient(rgba(51, 0, 255, 0.251), rgba(255, 225, 0, 0.415)), url(/img/swiper/img-2.jpeg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 0, 255, 0.251)), to(rgba(255, 225, 0, 0.415))), url(../../img/swiper/img-2.jpeg);
+  background-image: linear-gradient(rgba(51, 0, 255, 0.251), rgba(255, 225, 0, 0.415)), url(../../img/swiper/img-2.jpeg);
 }
 
 body main section.cover .swiper .swiper-slide.slide_3 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 0, 255, 0.251)), to(rgba(255, 225, 0, 0.415))), url(/img/swiper/img-3.jpeg);
-  background-image: linear-gradient(rgba(51, 0, 255, 0.251), rgba(255, 225, 0, 0.415)), url(/img/swiper/img-3.jpeg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 0, 255, 0.251)), to(rgba(255, 225, 0, 0.415))), url(../../img/swiper/img-3.jpeg);
+  background-image: linear-gradient(rgba(51, 0, 255, 0.251), rgba(255, 225, 0, 0.415)), url(../../img/swiper/img-3.jpeg);
 }
 
 body main section.journey {
