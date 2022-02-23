@@ -207,6 +207,451 @@ section.ui-card .btns .btn.contact_us {
   z-index: 1;
 }
 
+/*-----whatsapp pluging------*/
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+}
+
+#whatsapp.active .btn-container .label {
+  -webkit-animation-name: fadeOutDown;
+          animation-name: fadeOutDown;
+}
+
+#whatsapp.active .btn-container .icon-container::before {
+  -webkit-animation-name: wtp_animation-before;
+          animation-name: wtp_animation-before;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#whatsapp.active .btn-container .icon-container::after {
+  -webkit-animation-name: wtp_animation-after;
+          animation-name: wtp_animation-after;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#whatsapp.active .wtp-container {
+  display: block;
+  -webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp;
+}
+
+#whatsapp.active .wtp-container .wtp-body .item {
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft;
+}
+
+#whatsapp.active .wtp-container .wtp-body .item:nth-child(1n) {
+  -webkit-animation-delay: 0.08s;
+          animation-delay: 0.08s;
+}
+
+#whatsapp.active .wtp-container .wtp-body .item:nth-child(2n) {
+  -webkit-animation-delay: 0.16s;
+          animation-delay: 0.16s;
+}
+
+#whatsapp.active .wtp-container .wtp-body .item:nth-child(3n) {
+  -webkit-animation-delay: 0.24s;
+          animation-delay: 0.24s;
+}
+
+#whatsapp.active .wtp-container .wtp-body .item:nth-child(4n) {
+  -webkit-animation-delay: 0.32s;
+          animation-delay: 0.32s;
+}
+
+#whatsapp.active .wtp-container .wtp-body .item:nth-child(5n) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+#whatsapp.active .wtp-container .wtp-body .item:nth-child(6n) {
+  -webkit-animation-delay: 0.48s;
+          animation-delay: 0.48s;
+}
+
+#whatsapp.active .wtp-container .wtp-body .item:nth-child(7n) {
+  -webkit-animation-delay: 0.56s;
+          animation-delay: 0.56s;
+}
+
+#whatsapp.active .wtp-container .wtp-body .item:nth-child(8n) {
+  -webkit-animation-delay: 0.64s;
+          animation-delay: 0.64s;
+}
+
+#whatsapp.active .wtp-container .wtp-body .item:nth-child(9n) {
+  -webkit-animation-delay: 0.72s;
+          animation-delay: 0.72s;
+}
+
+#whatsapp.active .wtp-container .wtp-body .item:nth-child(10n) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+#whatsapp .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#whatsapp .btn-container .label {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 4px 10px;
+  background: #f5f7f9;
+  margin-right: 4px;
+  margin-top: -40px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 4px 8px #ccc;
+          box-shadow: 0 4px 8px #ccc;
+  -webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp;
+}
+
+#whatsapp .btn-container .icon-container {
+  background: #2db742;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  -webkit-box-shadow: 0 4px 8px #ccc;
+          box-shadow: 0 4px 8px #ccc;
+  position: relative;
+  overflow: hidden;
+}
+
+#whatsapp .btn-container .icon-container::before {
+  content: "";
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #000;
+  background-image: url("https://ik.imagekit.io/medamineck/Images/svgexport-1_FXJ3AnYpl.png?updatedAt=1632243566062");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #2db742;
+}
+
+#whatsapp .btn-container .icon-container::after {
+  content: "";
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-image: url("https://ik.imagekit.io/medamineck/Images/wtp_icon_Gw5rdmIyW.png?updatedAt=1632243643975");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #2db742;
+  background-size: contain;
+}
+
+#whatsapp .wtp-container {
+  display: none;
+  width: 90vw;
+  max-width: 400px;
+  position: absolute;
+  right: 0;
+  background: #fff;
+  bottom: 80px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+#whatsapp .wtp-container .wtp-header {
+  background: #2db742;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  direction: rtl;
+}
+
+#whatsapp .wtp-container .wtp-header .instructions {
+  text-align: left;
+  padding: 10px;
+}
+
+#whatsapp .wtp-container .wtp-header .instructions p.h1 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#whatsapp .wtp-container .wtp-header .instructions p.sub {
+  color: #fff;
+  opacity: 0.8;
+  line-height: 18px;
+  font-size: 12px;
+}
+
+#whatsapp .wtp-container .wtp-header .icon-container {
+  width: 100px;
+  height: 100%;
+}
+
+#whatsapp .wtp-container .wtp-header .icon-container span {
+  font-size: 45px;
+  color: #fff;
+}
+
+#whatsapp .wtp-container .wtp-body {
+  padding: 20px;
+}
+
+#whatsapp .wtp-container .wtp-body p.header {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 12px;
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
+
+#whatsapp .wtp-container .wtp-body .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #f5f7f9;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  border-left: 2px solid #2db742;
+  cursor: pointer;
+  -webkit-transition: -webkit-box-shadow linear 0.2s;
+  transition: -webkit-box-shadow linear 0.2s;
+  transition: box-shadow linear 0.2s;
+  transition: box-shadow linear 0.2s, -webkit-box-shadow linear 0.2s;
+  -webkit-box-shadow: 0 0 0 #ccc;
+          box-shadow: 0 0 0 #ccc;
+}
+
+#whatsapp .wtp-container .wtp-body .item:hover {
+  -webkit-box-shadow: 2px 4px 10px #ccc;
+          box-shadow: 2px 4px 10px #ccc;
+}
+
+#whatsapp .wtp-container .wtp-body .item .logo-container {
+  max-width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  margin-right: 10px;
+  border: 2px solid #2db742;
+  overflow: hidden;
+}
+
+#whatsapp .wtp-container .wtp-body .item .logo-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#whatsapp .wtp-container .wtp-body .item .content {
+  width: 100%;
+}
+
+#whatsapp .wtp-container .wtp-body .item .content p.name {
+  margin-top: 4px;
+  opacity: 0.8;
+}
+
+#whatsapp .wtp-container .wtp-body .item .content p.sub {
+  font-size: 12px;
+  opacity: 0.4;
+  margin-top: 4px;
+  letter-spacing: 2px;
+}
+
+#whatsapp .wtp-container .wtp-body .item .icon-container span {
+  color: #2db742;
+}
+
+@-webkit-keyframes wtp_animation-before {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0);
+            transform: translate(-50%, -50%) rotate(0);
+    visibility: hidden;
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(180deg);
+            transform: translate(-50%, -50%) rotate(180deg);
+    visibility: visible;
+  }
+}
+
+@keyframes wtp_animation-before {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0);
+            transform: translate(-50%, -50%) rotate(0);
+    visibility: hidden;
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(180deg);
+            transform: translate(-50%, -50%) rotate(180deg);
+    visibility: visible;
+  }
+}
+
+@-webkit-keyframes wtp_animation-after {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0) scale(1);
+            transform: translate(-50%, -50%) rotate(0) scale(1);
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%) rotate(180deg) scale(0.4);
+            transform: translate(-50%, -50%) rotate(180deg) scale(0.4);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg) scale(0.1);
+            transform: translate(-50%, -50%) rotate(360deg) scale(0.1);
+    opacity: 0;
+  }
+}
+
+@keyframes wtp_animation-after {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0) scale(1);
+            transform: translate(-50%, -50%) rotate(0) scale(1);
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%) rotate(180deg) scale(0.4);
+            transform: translate(-50%, -50%) rotate(180deg) scale(0.4);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg) scale(0.1);
+            transform: translate(-50%, -50%) rotate(360deg) scale(0.1);
+    opacity: 0;
+  }
+}
+
+.animate__animated {
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20%, 0);
+            transform: translate3d(0, 20%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20%, 0);
+            transform: translate3d(0, 20%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+  }
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+@-webkit-keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
 header {
   background: #fefdff;
   width: 100%;
@@ -330,6 +775,12 @@ footer .footer-top {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 10px;
+}
+
+footer .footer-top h3 {
+  color: #fff;
+  opacity: 0.4;
 }
 
 footer .footer-top .social-medias {
@@ -343,14 +794,62 @@ footer .footer-top .social-medias .icon {
   height: 30px;
   border-radius: 30px;
   background: #c4c4c4;
+  margin-right: 10px;
 }
 
 footer .footer-midle {
   background: #27262e;
+  padding: 20px 10px;
+}
+
+footer .footer-midle .label {
+  text-align: center;
+  color: #fff;
+  font-size: 14;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+footer .footer-midle .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-midle .links a {
+  color: #fff;
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+footer .custom-hr {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
 }
 
 footer .footer-bottom {
   background: #020423;
+  font-size: 10px;
+  color: #fff;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body main {

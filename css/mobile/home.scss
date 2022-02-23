@@ -38,6 +38,30 @@ body {
                         &.slide_3 {
                             background-image: $filter, url(../../img/swiper/img-3.jpeg);
                         }
+
+                        .main-text {
+                            width: 300px;
+                            margin: 50px auto;
+                            background: orange;
+                            padding: 10px;
+                        }
+
+                        p.sub {
+                            width: 300px;
+                            margin: 50px auto;
+                            background: rgb(221, 255, 0);
+                            padding: 10px;
+                        }
+
+                        button {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin: 0 auto;
+                            span {
+                                margin-right: 10px;
+                            }
+                        }
                     }
                 }
             }

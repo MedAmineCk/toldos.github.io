@@ -82,3 +82,69 @@ const swiper_gallery = new Swiper(".swiper-gallery", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+//whatsapp pluging
+$("#whatsapp .main-btn").on("click", function () {
+  $("#whatsapp").toggleClass("active");
+});
+
+//config
+var conf = {
+  accounts: [
+    {
+      whatsapp: "34600423547",
+      label: "Ghailani Fouad",
+      message:
+        "Hola, envíe su consulta o captura de pantalla de los productos que desea, nos pondremos en contacto con usted en unas horas.",
+      logo: "https://ik.imagekit.io/medamineck/Images/logo_ItffEz9e-.png",
+    },
+  ],
+  label: "¡Hola!",
+  titel: "iniciar una conversación",
+  subtitel:
+    "¡Hola! Haga clic en uno de nuestros miembros a continuación para chatear en WhatsApp",
+  notification: "El equipo suele responder en cuestión de minutos..",
+};
+function openWtp(number, text) {
+  window.open("https://wa.me/" + number + "?text=" + text);
+}
+conf.accounts.forEach((item) => {
+  var number = item.whatsapp;
+  var message = item.message;
+  var label = item.label;
+  var logo = item.logo;
+  $("#whatsapp .wtp-body").append(wtpMudule(number, message, label, logo));
+});
+
+function wtpMudule(number, message, label, logo) {
+  return (
+    '<div class="item animate__animated" onclick="openWtp(\'' +
+    number +
+    "', '" +
+    message +
+    "')\">" +
+    '<div class="logo-container flex-center">' +
+    '<img src="' +
+    logo +
+    '">' +
+    "</div>" +
+    '<div class="content">' +
+    '<p class="name">' +
+    label +
+    "</p>" +
+    '<p class="sub">+' +
+    number +
+    "</p>" +
+    "</div>" +
+    '<div class="icon-container flex-center">' +
+    '<span class="material-icons">' +
+    " open_in_new" +
+    "</span>" +
+    "</div>" +
+    "</div>"
+  );
+}
+$("#whatsapp .btn-container .label").html(conf.label);
+$("#whatsapp .wtp-container .instructions .h1").html(conf.titel);
+$("#whatsapp .wtp-container .instructions .sub").html(conf.subtitel);
+$("#whatsapp .wtp-body .header").html(conf.notification);
