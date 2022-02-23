@@ -596,6 +596,77 @@ button {
   }
 }
 
+.socila_media {
+  position: fixed;
+  top: 200px;
+  left: -85px;
+  z-index: 9999;
+}
+
+.socila_media .item {
+  width: 120px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 4px;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: all ease-out 0.2s;
+  transition: all ease-out 0.2s;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  border-radius: 0 22px 22px 0;
+}
+
+.socila_media .item.youtube {
+  background: #e4405f;
+}
+
+.socila_media .item:hover {
+  -webkit-transform: translateX(85px);
+  transform: translateX(85px);
+}
+
+.socila_media .item span {
+  color: #fff;
+}
+
+.socila_media .item .icon {
+  width: 35px;
+  height: 35px;
+  padding: 4px;
+  border-radius: 35px;
+  overflow: hidden;
+}
+
+.socila_media .item .icon img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.socila_media .item.facebook {
+  background: #1877f2;
+}
+
+.socila_media .item.whatsapp {
+  background: #25d366;
+}
+
+.socila_media .item.pinterest {
+  background: #bd081c;
+}
+
+.socila_media .item.linkedin {
+  background: #0077b5;
+}
+
 header {
   background: #fefdff;
   width: 100%;
