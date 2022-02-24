@@ -6,8 +6,13 @@
 @import "./footer";
 
 body {
+    background: rgb(219, 219, 220);
     main {
+        background: #fff;
         width: 100%;
+        max-width: $mobile;
+        margin: 0 auto;
+        position: relative;
         padding-top: $header_height;
         section {
             &.cover {

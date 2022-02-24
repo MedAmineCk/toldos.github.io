@@ -2,10 +2,12 @@ $header_height: 80px;
 header {
     background: colors(header-bg);
     width: 100%;
+    max-width: $mobile;
     height: $header_height;
     position: fixed;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 2;
     display: flex;
     justify-content: space-between;

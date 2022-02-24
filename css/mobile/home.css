@@ -169,6 +169,9 @@ button {
   bottom: 20px;
   right: 20px;
   z-index: 99;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 #whatsapp.active .btn-container .label {
@@ -670,10 +673,13 @@ button {
 header {
   background: #fefdff;
   width: 100%;
+  max-width: 500px;
   height: 80px;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1004,8 +1010,16 @@ footer .footer-bottom {
           align-items: center;
 }
 
+body {
+  background: #dbdbdc;
+}
+
 body main {
+  background: #fff;
   width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
   padding-top: 80px;
 }
 
