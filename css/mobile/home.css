@@ -169,9 +169,6 @@ button {
   bottom: 20px;
   right: 20px;
   z-index: 99;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
 }
 
 #whatsapp.active .btn-container .label {
