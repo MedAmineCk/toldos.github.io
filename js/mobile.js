@@ -25,7 +25,7 @@ $("header .contacts").on("click", function () {
 //make a loop on possible number of winds and add them to header winds
 
 function winds(_wind_size) {
-  var screen_width = $(document).width();
+  var screen_width = $("main#app").width();
   var num_winds = Math.ceil(screen_width / _wind_size);
   var html_winds = "";
   for (let index = 0; index < num_winds; index++) {
