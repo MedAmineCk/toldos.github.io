@@ -1,9 +1,8 @@
-$header_height: 80px;
 header {
     background: colors(header-bg);
     width: 100%;
     max-width: $mobile;
-    height: $header_height;
+    height: $header-height;
     position: fixed;
     top: 0;
     left: 50%;
