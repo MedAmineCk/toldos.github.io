@@ -696,11 +696,11 @@ header {
   max-width: 500px;
   height: 80px;
   position: fixed;
+  z-index: 99;
   top: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

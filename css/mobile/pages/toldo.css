@@ -701,7 +701,6 @@ header {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1042,352 +1041,111 @@ body main {
   margin: 0 auto;
   position: relative;
   padding-top: 80px;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
 }
 
-body main section.cover .swiper {
+body main section.main-content .swiper-container {
+  width: 340px;
+  margin: 40px auto 20px auto;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+body main section.main-content .swiper-container .swiper {
   width: 100%;
-  height: 400px;
+  height: 200px;
 }
 
-body main section.cover .swiper .swiper-button-prev,
-body main section.cover .swiper .swiper-button-next {
+body main section.main-content .swiper-container .swiper .swiper-button-prev,
+body main section.main-content .swiper-container .swiper .swiper-button-next {
   color: #fff;
 }
 
-body main section.cover .swiper .swiper-pagination-bullet {
+body main section.main-content .swiper-container .swiper .swiper-pagination-bullet {
   background: #ccc;
 }
 
-body main section.cover .swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+body main section.main-content .swiper-container .swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #fff;
 }
 
-body main section.cover .swiper .swiper-slide {
+body main section.main-content .swiper-container .swiper .swiper-slide {
   width: 100%;
-  background-size: cover;
-}
-
-body main section.cover .swiper .swiper-slide.slide_1 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 0, 255, 0.251)), to(rgba(255, 225, 0, 0.415))), url(../../img/swiper/cover.jpg);
-  background-image: linear-gradient(rgba(51, 0, 255, 0.251), rgba(255, 225, 0, 0.415)), url(../../img/swiper/cover.jpg);
-}
-
-body main section.cover .swiper .swiper-slide.slide_2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 0, 255, 0.251)), to(rgba(255, 225, 0, 0.415))), url(../../img/swiper/img-2.jpeg);
-  background-image: linear-gradient(rgba(51, 0, 255, 0.251), rgba(255, 225, 0, 0.415)), url(../../img/swiper/img-2.jpeg);
-}
-
-body main section.cover .swiper .swiper-slide.slide_3 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 0, 255, 0.251)), to(rgba(255, 225, 0, 0.415))), url(../../img/swiper/img-3.jpeg);
-  background-image: linear-gradient(rgba(51, 0, 255, 0.251), rgba(255, 225, 0, 0.415)), url(../../img/swiper/img-3.jpeg);
-}
-
-body main section.cover .swiper .swiper-slide .main-text {
-  width: 300px;
-  margin: 50px auto;
-  background: orange;
-  padding: 10px;
-}
-
-body main section.cover .swiper .swiper-slide p.sub {
-  width: 300px;
-  margin: 50px auto;
-  background: #ddff00;
-  padding: 10px;
-}
-
-body main section.cover .swiper .swiper-slide button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 auto;
-}
-
-body main section.cover .swiper .swiper-slide button span {
-  margin-right: 10px;
-}
-
-body main section.journey {
-  padding: 10px;
-  background-color: rgba(255, 225, 0, 0.415);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-size: 14px;
-}
-
-body main section.journey .scroll-icon {
-  -webkit-animation-name: bounce;
-          animation-name: bounce;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-body main section.categories .card-ui {
-  position: relative;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  width: 100%;
-  max-width: 350px;
-  overflow: hidden;
-  padding: 10px;
-  margin: 20px auto;
-}
-
-body main section.categories .card-ui .images {
   position: relative;
 }
 
-body main section.categories .card-ui .images .thumbnail {
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-  border-radius: 20px;
-}
-
-body main section.categories .card-ui .images .thumbnail img {
+body main section.main-content .swiper-container .swiper .swiper-slide img {
   max-width: 100%;
+  min-height: 100%;
 }
 
-body main section.categories .card-ui .images .other-images {
-  background-color: #fff;
+body main section.main-content .swiper-container .swiper .swiper-slide::after {
+  content: "";
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 10px;
-  right: 10px;
-  border-radius: 12px;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2)));
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 }
 
-body main section.categories .card-ui .images .other-images .item {
-  overflow: hidden;
-  border-radius: 12px;
-  opacity: 0.6;
-  margin: 5px;
-}
-
-body main section.categories .card-ui .images .other-images .item.active {
-  opacity: 1;
-}
-
-body main section.categories .card-ui .images .other-images .item img {
-  max-width: 40px;
-  height: 40px;
-}
-
-body main section.categories .card-ui .titel {
+body main section.main-content .swiper-container .titel {
   background: #fff;
   border-radius: 20px;
   position: absolute;
-  top: 180px;
-  left: 20px;
+  top: 130px;
+  left: 30px;
   padding: 0 10px;
   color: #000;
   font-weight: bold;
+  z-index: 2;
 }
 
-body main section.categories .card-ui .sub {
-  font-size: 14px;
-  padding: 10px;
-  opacity: 0.8;
-}
-
-body main section.categories .card-ui button {
-  margin-left: 10px;
-}
-
-body main section.highlight {
-  padding: 10px;
-}
-
-body main section.highlight .section-label {
-  position: relative;
-  left: -10px;
-}
-
-body main section.highlight.fabric, body main section.highlight.testimonial {
-  background: #f6f6f6;
-}
-
-body main section.highlight.mesure {
-  background: -webkit-gradient(linear, left top, left bottom, from(#0074b6), to(rgba(0, 116, 182, 0)));
-  background: linear-gradient(180deg, #0074b6 0%, rgba(0, 116, 182, 0) 100%);
-}
-
-body main section.highlight h3 {
+body main section.main-content p.description {
+  padding: 0 20px;
   font-size: 14px;
 }
 
-body main section.highlight p {
-  font-size: 12px;
-  opacity: 0.8;
-  margin: 10px 0;
-  letter-spacing: 1.2px;
+body main section.gallery-section {
+  margin: 20px auto;
 }
 
-body main section.highlight .img-container {
-  width: 100%;
+body main section.gallery-section .section-label {
   margin-bottom: 10px;
 }
 
-body main section.highlight .img-container img {
-  max-width: 100%;
+body main section.gallery-section .gallery-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-body main section.gallery {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-body main section.gallery .swiper {
-  width: 100%;
-}
-
-body main section.gallery .swiper .swiper-slide {
-  margin: 0 20px;
-}
-
-body main section.gallery .img-item {
-  width: 200px;
-  height: 150px;
-  border: 1px solid yellow;
-  border-radius: 12px;
-  overflow: hidden;
-  margin: 0 auto;
-}
-
-body main section.gallery .img-item .img-container {
-  width: 100%;
-  height: 100px;
+body main section.gallery-section .gallery-container .gallery-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100px;
+          flex: 1 0 100px;
+  margin: 10px;
+  -webkit-box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
   overflow: hidden;
 }
 
-body main section.gallery .img-item .img-container img {
-  max-width: 100%;
+body main section.gallery-section .gallery-container .gallery-item .gallery-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-transform 400ms ease-out;
+  transition: -webkit-transform 400ms ease-out;
+  transition: transform 400ms ease-out;
+  transition: transform 400ms ease-out, -webkit-transform 400ms ease-out;
 }
 
-body main section.gallery .img-item .sub {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 10px;
+body main section.gallery-section .gallery-container .gallery-item .gallery-image::hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
-
-body main section.gallery .img-item .sub span.date {
-  opacity: 0.6;
-}
-
-body main section.testimonial .comment-card {
-  width: 300px;
-  margin: 0 auto;
-  background-color: #e0e9eb;
-  border-radius: 12px;
-  padding: 10px;
-  position: relative;
-  margin-bottom: 20px;
-}
-
-body main section.testimonial .comment-card .ratting {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-body main section.testimonial .comment-card .ratting .icons {
-  margin-right: 10px;
-}
-
-body main section.testimonial .comment-card .ratting .icons span {
-  color: orange;
-}
-
-body main section.testimonial .comment-card .quote-icon {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-}
-
-body main section.testimonial .comment-card .quote-icon span {
-  font-size: 65px;
-  opacity: 0.1;
-}
-
-body main section.testimonial .comment-card .commenter {
-  text-align: center;
-}
-
-body main section.contact_us {
-  padding: 10px;
-}
-
-body main section.contact_us h3 {
-  text-align: center;
-  margin: 20px auto;
-}
-
-body main section.contact_us p {
-  font-size: 12px;
-  opacity: 0.6;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-body main section.contact_us .contact-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 20px;
-}
-
-body main section.contact_us .contact-item .icon {
-  width: 30px;
-  height: 30px;
-  border-radius: 30px;
-  background: rgba(0, 0, 0, 0.2);
-  margin-right: 10px;
-}
-
-body main section.contact_us .contact-item .icon span {
-  font-size: 18px;
-}
-
-body main section.contact_us .contact-item .container .label {
-  height: 30px;
-  line-height: 30px;
-  font-weight: bold;
-  opacity: 0.4;
-}
-
-body main section.contact_us .map {
-  width: 300px;
-  margin: 0 auto;
-}
-
-body main section.contact_us .map img {
-  max-width: 100%;
-}
-
-body main section.brands .img-container {
-  width: 350px;
-  margin: 20px auto;
-}
-
-body main section.brands .img-container img {
-  max-width: 100%;
-}
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=toldo.css.map */

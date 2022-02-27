@@ -5,10 +5,10 @@ header {
     max-width: $mobile;
     height: $header_height;
     position: fixed;
+    z-index: 99;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
