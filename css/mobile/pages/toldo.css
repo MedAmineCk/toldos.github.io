@@ -789,6 +789,7 @@ header nav::before {
   top: 0;
   left: 0;
   background: #ffffff6b;
+  z-index: 1;
 }
 
 @supports ((-webkit-backdrop-filter: blur(24px)) or (backdrop-filter: blur(24px))) {
@@ -808,6 +809,8 @@ header nav.active {
 header nav ul {
   list-style: none;
   text-align: center;
+  position: relative;
+  z-index: 3;
 }
 
 header nav ul li {
@@ -819,7 +822,7 @@ header nav ul li a {
   position: relative;
   color: rgba(0, 0, 0, 0.6);
   opacity: 0.8;
-  font-size: 24px;
+  font-size: 18px;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
@@ -851,6 +854,7 @@ header nav ul li.contact_us {
   width: 100vw;
   margin-top: 200px;
   position: relative;
+  z-index: 3;
 }
 
 header nav ul li.contact_us::before {
@@ -870,9 +874,10 @@ header nav ul li.contact_us a {
   color: #fff;
   font-size: 18px;
   position: relative;
+  bottom: -18px;
   z-index: 2;
-  background: #263238e8;
-  padding: 0 10px;
+  background: #263238;
+  padding: 10px 20px;
   border-radius: 60px;
   margin: 0 auto;
   opacity: 1;

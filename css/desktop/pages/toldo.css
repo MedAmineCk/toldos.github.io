@@ -701,6 +701,7 @@ header {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -48,11 +48,13 @@
       </div>
       <nav>
         <ul>
-          <li>bienvenida</li>
-          <li>productos</li>
-          <li>Sobre nosotros</li>
+          <li><a href="#">bienvenida</a></li>
+          <li><a href="#">productos</a></li>
+          <li><a href="#">Sobre nosotros</a></li>
+          <li class="contact_us">
+            <a href="#contact_us">Contact us</a>
+          </li>
         </ul>
-        <button class="main-btn contact_us">Contáctenos</button>
       </nav>
       <div class="nav_tab_icon">
         <div class="item"></div>
@@ -62,6 +64,7 @@
       <ul class="winds">
       </ul>
     </header>
+    <div w3-include-html="h1.html"></div>
     <section class="cover">
       <!-- Slider main container -->
       <div class="swiper swiper-cover">
@@ -71,7 +74,7 @@
           <div class="swiper-slide slide_1">
             <div class="main-text">¿AÚN SIN TOLDO? ¡YA QUEDA POCO PARA EL BUEN TIEMPO!</div>
             <p class="sub">Contáctanos y solicita una visita comercial. ilremos a verte!</p>
-            <button>
+            <button onclick="location.href='#contact_us';">
               <span>¡Consùltanos!</span> <span class="material-icons">
                 ads_click
               </span>
@@ -81,7 +84,7 @@
             <div class="main-text">CONSIGUE NUESTRO MODELO TOLDO COFRE TGM-BOXL900 MOTORIZADO A UN PRECIO ESPECIAL
             </div>
             <p class="sub">iúltimas 15 unidades disponibles! </p>
-            <button>
+            <button onclick="location.href='#contact_us';">
               <span>¡Consùltanos!</span> <span class="material-icons">
                 ads_click
               </span>
@@ -90,7 +93,7 @@
           <div class="swiper-slide slide_3">
             <div class="main-text">LONAS ANTIVANDÁLICAS PARA EL TRANSPORTE XL </div>
             <p class="sub">Tu mercancía siempre protegida. </p>
-            <button>
+            <button onclick="location.href='#contact_us';">
               <span>¡Consùltanos!</span> <span class="material-icons">
                 ads_click
               </span>
@@ -284,7 +287,7 @@
         <div class="commenter">- Cliente satisfecho</div>
       </div>
     </section>
-    <section class="contact_us">
+    <section id="contact_us" class="contact_us">
       <h3>Información del contacto</h3>
       <p>contáctenos a través de las redes sociales durante los días hábiles (lunes, sábado)</p>
       <div class="contact-item">
